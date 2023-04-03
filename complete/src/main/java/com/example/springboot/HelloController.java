@@ -7,11 +7,10 @@ import Mock;
 @RestController
 public class HelloController {
 
-
+	public Mock m;
 	@GetMapping("/")
 	public String index() {
-		Mock mock = new Mock();
-		mock.myString="False";
+		m.myString="False";
 		return "Greetings from Spring Boot!";
 	}
 
